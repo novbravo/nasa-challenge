@@ -1,0 +1,77 @@
+[
+    {
+        "id": "", "camera": "All"
+    },
+    {
+        "id": "EDL_RUCAM", "camera": "Rover Up-Look Camera"
+    },
+    {
+        "id": "EDL_RDCAM", "camera": "Rover Down-Look Camera"
+    },
+    {
+        "id": "EDL_DDCAM", "camera": "Descent Stage Down-Look Camera"
+    },
+    {
+        "id": "EDL_PUCAM1", "camera": "Parachute Up-Look Camera A"
+    },
+    {
+        "id": "EDL_PUCAM2", "camera": "Parachute Up-Look Camera B"
+    },
+    {
+        "id": "NAVCAM_LEFT", "camera": "Navigation Camera - Left"
+    },
+    {
+        "id": "NAVCAM_RIGHT", "camera": "Navigation Camera - Right"
+    },
+    {
+        "id": "MCZ_RIGHT", "camera": "Mast Camera Zoom - Right"
+    },
+    {
+        "id": "MCZ_LEFT", "camera": "Mast Camera Zoom - Left"
+    },
+    {
+        "id": "FRONT_HAZCAM_LEFT_A", "camera": "Front Hazard Avoidance Camera - Left"
+    },
+    {
+        "id": "FRONT_HAZCAM_RIGHT_A", "camera": "Front Hazard Avoidance Camera - Right"
+    },
+    {
+        "id": "REAR_HAZCAM_LEFT", "camera": "Rear Hazard Avoidance Camera - Left"
+    },
+    {
+        "id": "REAR_HAZCAM_RIGHT", "camera": "Rear Hazard Avoidance Camera - Right"
+    },
+    {
+        "id": "SKYCAM", "camera": "MEDA Skycam"
+    },
+    {
+        "id": "SHERLOC_WATSON", "camera": "SHERLOC WATSON Camera"
+    },
+    {
+        "id": "FHAZ", "camera": "Front Hazard Avoidance Camera"
+    },
+    {
+        "id": "RHAZ", "camera": "Rear Hazard Avoidance Camera"
+    },
+    {
+        "id": "MAST", "camera": "Mast Camera"
+    },
+    {
+        "id": "CHEMCAM", "camera": "Chemistry and Camera Complex"
+    },
+    {
+        "id": "MAHLI", "camera": "Mars Hand Lens Imager"
+    },
+    {
+        "id": "MARDI", "camera": "Mars Descent Imager"
+    },
+    {
+        "id": "NAVCAM", "camera": "Navigation Camera"
+    },
+    {
+        "id": "PANCAM", "camera": "Panoramic Camera"
+    },
+    {
+        "id": "MINITES", "camera": "Miniature Thermal Emission Spectrometer (Mini-TES)"
+    }
+]

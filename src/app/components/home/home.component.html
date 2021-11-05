@@ -1,0 +1,57 @@
+<!-- filters -->
+<form class="form">
+    <div class="row">
+        <div class="col-md-3">
+            <label for="basic-url" class="form-label">Rover</label>
+            <select class="form-select" name="rovers" [(ngModel)]="roverSelected">
+                <option *ngFor="let rover of rovers" [value]="rover.id">{{rover.name}}</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="cameras" class="form-label">Camera</label>
+            <select class="form-select" name="cameras" [(ngModel)]="cameraSelected">
+                <option *ngFor="let camera of cameras" [value]="camera.id">{{camera.camera}}</option>
+            </select>
+        </div>
+        <div class="col-md-2">            
+            <label for="date" class="form-label">Earth date</label>
+            <input class="form-control" type="date" id="date" name="trip-start"
+                    [(ngModel)]="dateSelected">
+        </div>
+        <div class="col-md-2">
+        <label for="sol" class="form-label">Sol</label>
+            <input class="form-control" type="number" id="sol" name="sol" min="0" [(ngModel)]="solSelected">
+        </div>
+        <div class="col-md-2">
+            <label for="sol" class="form-label">Page</label>
+                <input class="form-control" type="number" id="page" name="page" min="1" [(ngModel)]="pageSelected">
+            </div>
+        <div class="col-12 mt-2" style="text-align: right;">            
+            <button type="submit" class="btn btn-outline-primary" (click)="search()">Search</button>           
+        </div>
+    </div>
+</form>
+
+<div *ngIf="loading" class="row text-center mt-5">
+    <div class="col">
+        <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+</div>
+
+<div *ngIf="photos.length === 0 && !loading" class="alert alert-danger mt-3" role="alert">
+    {{ messageError }}
+</div>
+
+<div *ngIf="photos.length > 0 && !loading" class="row row-cols-1 row-cols-md-4 g-3 mt-3">
+    <div *ngFor="let ph of photos" class="col">
+      <div  class="card">
+        <img [src]="ph.img_src" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Rover: {{ ph.rover.name }}</h5>
+          <p class="card-text">{{ ph.id }} - Camera: {{ ph.camera.name}}</p>
+          <p class="card-text">{{ ph.camera.full_name }}</p>
+          <h6 class="card-text">Earth date: {{ ph.earth_date | date:'dd-MMM-YYYY'}}</h6>
+        </div>
+      </div>
+    </div>    
+</div>
